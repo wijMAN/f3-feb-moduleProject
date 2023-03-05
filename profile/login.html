@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <a href="../index.html">MeShop.</a>
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="signup.html">Signup</a>
+            </li>
+            <li>
+                <a href="../cart/index.html">My Cart</a>
+            </li>
+
+        </ul>
+    </div>
+    <div style="margin: 15px 15px; font-size: 30px;">Login</div>
+
+    <div class="textBox">
+        <input type="email" placeholder="Email" class="boxInput" id="mail">
+    </div>
+    <div class="textBox">
+        <input type="password" placeholder="Password" class="boxInput" id="pass">
+    </div>
+    <button onclick="fun2()">Login</button>
+    <p id="warn" style="color: red; margin-left: 20px;"></p>
+    <p id="great" style="color: green; margin-left: 20px;"></p>
+    <script src="index1.js"></script>
+    <script>
+        if (localStorage.getItem("currentUser") != null) {
+            window.location.assign("dashboard.html");
+        }
+    </script>
+</body>
+
+</html>

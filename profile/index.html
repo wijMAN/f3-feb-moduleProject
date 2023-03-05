@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 
 <head>
@@ -12,16 +8,55 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-  Profile
+  <div class="container">
+    <div class="box1">
+      <a href="../index.html">MeShop.</a>
+    </div>
+    <div class="box2">
+      <ul>
+        <li>
+          <a href="signup.html">Signup</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div style="margin: 15px 15px; font-size: 30px; font-weight: bold;">Teacher's Dashboard</div>
+  <div style="margin: 15px 15px; font-size: 25px; ">Welcome back <span id="tName" style="color: red;"></span> !</div>
+  <div style="margin: 15px 15px; font-size: 25px; ">Your Email ID : <span id="tEmail" style="color: red;"></span>
+  </div>
+
+  <div style="margin: 15px 15px; font-size: 30px; font-weight: bold;">Change Password</div>
+
+  <div class="textBox">
+    <input type="password" placeholder="Old Password" class="boxInput" id="opass">
+  </div>
+  <div class="textBox">
+    <input type="password" placeholder="New Password" class="boxInput" id="npass">
+  </div>
+  <div class="textBox">
+    <input type="password" placeholder="Confirm New Password" class="boxInput" id="cnpass">
+  </div>
+  <button onclick="fun3()">Change</button>
+  <br>
+  <button onclick="fun4()">Logout</button>
+  <p id="warn" style="color: red; margin-left: 20px;"></p>
+  <p id="great" style="color: green; margin-left: 20px;"></p>
+  <script src="index1.js"></script>
+  <script>
+    let a = JSON.parse(localStorage.getItem("currentUser"));
+    document.getElementById('tName').innerText = `${a["name"]}`;
+    document.getElementById('tEmail').innerText = `${a["email"]}`;
+  </script>
 
   <script src="" async defer></script>
 </body>

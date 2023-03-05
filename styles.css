@@ -1,1 +1,46 @@
 /* Write styles here */
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: black;
+  color: white; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.cont {
+  display: flex;
+  justify-content: space-around;
+}
+.box,
+button,
+input {
+  padding: 15px 20px;
+  font-size: 20px;
+}
+button,
+input {
+  margin: 20px 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.btn1 {
+  color: black;
+  background-color: white;
+}
+.btn1:hover {
+  cursor: pointer;
+}
+.btn1:active {
+  transform: scale(0.98);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
