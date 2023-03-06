@@ -17,19 +17,18 @@
   display: flex;
   justify-content: space-around;
 }
-.box,
-button,
-input {
+.box {
   padding: 15px 20px;
   font-size: 20px;
 }
-button,
-input {
-  margin: 20px 20px;
-  border-radius: 8px;
-  border: 1px solid white;
+button {
+  font-size: 20px;
+  margin: 2px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  width: 150px;
 }
-.btn1 {
+/* .btn1 {
   color: black;
   background-color: white;
 }
@@ -38,8 +37,15 @@ input {
 }
 .btn1:active {
   transform: scale(0.98);
+} */
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
 }
-
+button:active {
+  transform: scale(1.02);
+}
 a {
   text-decoration: none;
   color: white;
